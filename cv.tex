@@ -1,0 +1,265 @@
+
+\documentclass[11pt]{article}
+\usepackage{palatino}
+\usepackage{supertabular}
+\usepackage{float}
+\usepackage{pifont}
+\usepackage{url}
+% \usepackage{bookman}
+
+% \setlength{\voffset}{-25mm}
+\textheight 9.3in         % 1in top and bottom margin
+\textwidth 6.5in        % 1in left and right margin
+
+\oddsidemargin 0in      % Both side margins are now 1in
+\evensidemargin 0in
+
+% The header goes .5in from top of the page and from the text.
+\topmargin -.7in
+\headsep .5in
+\marginparwidth .7in
+\marginparsep .15in
+
+\begin{document}
+
+\pagestyle{empty}
+
+%\begin{center}
+{\noindent\huge\bf Stephanos Matsumoto}
+%\end{center}
+
+\vspace{4mm}
+%\noindent(This CV is also available at \texttt{http://www.stevematsumoto.net/cv}.)
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{p{0.5\linewidth}p{0.5\linewidth}}
+    ETH Zurich, Network Security Group & Email: \verb+steve@stevematsumoto.net+\\
+    CAB F56.1 & Phone: +41 44 632 45 50\\
+    Universit\"{a}tstrasse 6 & \verb+http://www.stevematsumoto.net/+\\
+    8092 Zurich, Switzerland &\\
+  \end{tabular}
+\end{table}
+
+%--------------------------------------------------------------------------------
+{\noindent\Large\textbf{Research Areas}}\\\\
+Decentralized Internet-scale network architectures, public-key infrastructures,
+authentication and trust, blockchains, future Internet architecture, incentives
+and economic issues, network security
+
+%--------------------------------------------------------------------------------
+\begin{tabbing}
+\quad\=\kill
+{\Large\textbf{Education}}\\\\
+Department of Computer Science, ETH Zurich, Switzerland.\\
+\>Ph.D., Computer Science, January 2014 -- Present.\\
+\>Advisor: Prof.\ Adrian Perrig.\\\\
+
+Department of Electrical and Computer Engineering, Carnegie Mellon University,
+Pittsburgh, PA.\\
+\>Ph.D., Electrical and Computer Engineering, June 2012 -- Present.\\
+\>Advisor: Profs.\ Adrian Perrig, Virgil Gligor.\\\\
+
+Department of Electrical and Computer Engineering, Carnegie Mellon University,
+Pittsburgh, PA.\\
+\>M.S., Electrical and Computer Engineering, June 2012 -- August 2013.\\
+\>Thesis: A Scalable and Trustworthy Entity Validation Infrastructure.\\
+\>Advisor: Prof.\ Adrian Perrig.\\\\
+
+Harvey Mudd College, Claremont, CA.\\
+\>B.S., Joint Major in Mathematics and Computer Science, September 2008 -- May
+2012.\\
+\>\emph{Graduated with High Distinction, Departmental Honors in Computer
+Science.}\\\\
+
+College of the Canyons, Santa Clarita, CA\\
+\>A.A., Mathematics, August 2005 -- May 2008.\\
+\>\emph{Graduated with High Honors.}
+\end{tabbing}
+
+\newcounter{refs}
+\setcounter{refs}{1}
+\makeatletter
+\newcommand{\theref}{\@arabic\c@refs}
+\makeatother
+
+\renewcommand{\refname}{Refereed Conference and Workshop Papers} % ***
+\begin{thebibliography}{77}
+
+\bibitem[\theref]{chen2015ecodns}
+  Chen Chen, Stephanos Matsumoto, Adrian Perrig.
+\newblock ``ECO-DNS: Expected Consistency Optimization for DNS.''
+\newblock In \emph{35th IEEE International Conference on Distributed Computing
+Systems (ICDCS)}, Columbus, OH, July 2015.
+\stepcounter{refs}
+
+\bibitem[\theref]{matsumoto2015deployment}
+  Stephanos Matsumoto, Pawel Szalachowski, Adrian Perrig.
+\newblock ``Deployment Challenges in Log-Based PKI Protocols.''
+\newblock In \emph{Eighth European Workshop on System Security (EuroSec 2015)},
+Bordeaux, France, April 2015.
+\stepcounter{refs}
+
+\bibitem[\theref]{matsumoto2015certificates}
+  Stephanos Matsumoto, Raphael M. Reischuk.
+\newblock ``Certificates-as-an-Insurance: Incentivizing Accountability in
+SSL/TLS.''
+\newblock In \emph{NDSS Workshop on Security of Emerging Network Technologies
+(SENT '15)}, San Diego, CA, February 2015.
+\stepcounter{refs}
+
+\bibitem[\theref]{szalachowski2014policert}
+  Pawel Szalachowski, Stephanos Matsumoto, Adrian Perrig.
+\newblock ``PoliCert: Secure and Flexible TLS Certificate Management.''
+\newblock In \emph{ACM Conference on Computer and Communications Security (CCS
+'14)}, Scottsdale, AZ, November 2014.
+\stepcounter{refs}
+
+\bibitem[\theref]{matsumoto2014fleet}
+  Stephanos Matsumoto, Samuel Hitz, Adrian Perrig.
+\newblock ``Fleet: Defending SDNs from Malicious Administrators.''
+\newblock In \emph{ACM SIGCOMM Workshop on Hot Topics in Software Defined
+Networking (HotSDN '14)}, Chicago, IL, August 2014.
+\stepcounter{refs}
+
+\bibitem[\theref]{Lea:pixellaser-tepra}
+M. Leece, N. Lesperance, S. Matsumoto, M. Korbel, K. Lei, Z. Dodds.
+\newblock ``PixelLaser: Evaluating Monocular Range from Texture.''
+\newblock In \emph{IEEE International Conference on Technologies for Practical
+Robot Applications (TePRA '11)}, Boston, MA, April 2011.
+\stepcounter{refs}
+
+\bibitem[\theref]{Lea:pixellaser-isvc}
+N. Lesperance, M. Leece, S. Matsumoto, M. Korbel, K. Lei, Z. Dodds.
+\newblock ``PixelLaser: Computing Range from Monocular Texture.''
+\newblock In \emph{Proceedings of the 6th International Symposium on Visual
+Computing (ISVC '10)}, Las Vegas, NV, December 2010.
+\stepcounter{refs}
+\end{thebibliography}
+
+%--------------------------------------------------------------------------------
+\renewcommand{\refname}{Preprints}
+\begin{thebibliography}{77}
+\bibitem[\theref]{matsumoto2015designing}
+  Stephanos Matsumoto, Raphael M. Reischuk, Pawel Szalachowski, Tiffany Hyun-Jin
+  Kim, Adrian Perrig.
+\newblock ``Designing a Global Authentication Infrastructure.''
+\newblock arXiv:1506.03392 [cs.CR], June 2015.
+\stepcounter{refs}
+\end{thebibliography}
+
+\renewcommand{\refname}{Posters}
+\begin{thebibliography}{77}
+\bibitem[\theref]{Cea:android-im}
+Adam Cozzette, Kathryn Lingel, Steve Matsumoto, Oliver Ortlieb, Jandria
+Alexander, Joseph Betser, Luke Florer, Geoff Kuenning, John Nilles, and Peter
+Reiher.
+\newblock ``Improving the Security of Android Inter-Component Communication.''
+\newblock IFIP/IEEE Symposium on Integrated
+Network Management, May 2013.\\
+\stepcounter{refs}
+
+\bibitem[\theref]{kelley2013art}
+Patrick Gage Kelley, Saranga Komanduri, Stephanos Matsumoto, Michelle L.
+Mazurek, Richard Shay, Blase Ur, Timothy Vidas, Lujo Bauer, Nicolas Christin,
+and Lorrie Faith Cranor.
+\newblock ``The Art of Password Creation.''
+\newblock IEEE Symposium on Security and Privacy, May 2013.\\
+\stepcounter{refs}
+
+\bibitem[\theref]{matsumoto2011what}
+Steve Matsumoto.
+\newblock ``What do random walks tell us about the shapes of regions in the
+complex plane?''
+\newblock Harvey Mudd College Celebration of Student Research, September 2011.\\
+\stepcounter{refs}
+\end{thebibliography}
+
+%\newpage
+\noindent{\Large\textbf{Teaching}}\\
+
+\noindent Future Faculty Program (transcript available upon request).\\
+Carnegie Mellon University, Fall 2012--Spring 2016.
+\vspace{2mm}
+
+\noindent Teaching Assistant and Course Coordinator, Network Security.\\
+Instructors: Prof. Adrian Perrig; Drs.\ Thomas D\"{u}bendorfer, Stefan Frei.\\
+Department of Computer Science, ETH Zurich, Fall 2015.
+\vspace{2mm}
+
+\noindent Bachelor's Thesis Supervisor (co-advisor with Adrian Perrig).\\
+Student: Samuel Steffen.\\
+Department of Computer Science, ETH Zurich, Spring/Summer 2015.
+\vspace{2mm}
+
+\noindent Teaching Assistant, Network Security.\\
+Instructors: Profs.\ Bernhard Plattner, Adrian Perrig; Drs.\ Thomas
+D\"{u}bendorfer, Stefan Frei.\\
+Department of Electrical Engineering, ETH Zurich, Fall 2014.
+\vspace{2mm}
+
+\noindent Teaching Assistant, Information Security.\\
+Instructors: Profs. Srdjan Capkun, Adrian Perrig.\\
+Department of Computer Science, ETH Zurich, Spring 2014.
+\vspace{2mm}
+
+\noindent Teaching Assistant, 18-202: Mathematical Foundations of Electrical
+Engineering.\\
+Instructors: Profs. Li Yuo, Tom Sullivan.\\
+Department of Electrical and Computer Engineering, Carnegie Mellon University,
+Fall 2013.
+\vspace{2mm}
+
+\noindent Teaching Assistant, 18-202: Mathematical Foundations of Electrical
+Engineering.\\
+Instructor: Prof. Xin Li.\\
+Department of Electrical and Computer Engineering Department, Carnegie Mellon
+University, Spring 2013.\\
+\vspace{2mm}
+
+\noindent{\Large\textbf{Awards}}\\
+
+\noindent NSF Graduate Fellowship,
+2012 -- present (on reserve from 2015)
+\vspace{2mm}
+
+\noindent Cecil H. Short Memorial Prize,
+Pomona College, 2012
+\vspace{2mm}
+
+\noindent National Physical Science Consortium Graduate Fellowship,
+National Security Agency, 2012
+\vspace{2mm}
+
+\noindent Honorable Mention, Ford Foundation Predoctoral Fellowship,
+2012
+\vspace{2mm}
+
+\noindent International Vacation Scholarship,
+University of South Australia, 2011
+\vspace{2mm}
+
+\noindent Harvey Mudd College Rose Hills Grant,
+Rose Hills Foundation, 2010, 2011
+\vspace{2mm}
+
+\noindent Rose Hills Foundation Science and Engineering Scholarship,
+2009--2012
+\vspace{2mm}
+
+\noindent Ebell/Flint Scholarship,
+The Ebell of Los Angeles, 2009--2012
+\vspace{2mm}
+
+\noindent Dean's List,
+Harvey Mudd College, 2009--2011
+\vspace{2mm}
+
+\noindent Harvey Mudd Merit Award,
+Harvey Mudd College, 2008--2012
+\vspace{2mm}
+
+\end{document}
+%--------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------
