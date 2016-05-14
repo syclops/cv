@@ -1,3 +1,7 @@
+## Vim intermediate files
+*.un~
+*.swp
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
